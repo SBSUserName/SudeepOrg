@@ -1,0 +1,27 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.current {
+  background-color: blueviolet;
+  color: white;
+}
+
+.nav-top {
+  font-size: 1.25rem;
+}
+
+.main-title {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  margin-right: 1rem;
+}

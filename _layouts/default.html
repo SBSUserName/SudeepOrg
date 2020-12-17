@@ -2,19 +2,20 @@
   <head>
     <meta charset="utf-8" />
     <title>My Jekyll Site</title>
+    <link href="{{site.basurl}}/css/common.css" rel="stylesheet" />
   </head>
 
   <body>
     <header>
-      <strong>Planets of the universe</strong>
-      <nav>
-        <ul>
-          <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-          <li><a href="{{site.baseurl}}/news.html">News</a></li>
-        </ul>
-      </nav>
+      <h1 class="main-title">Planets of the universe</h1>
+      {% include nav.html navclass='nav-top' %}
     </header>
 
     {{content}}
+
+    <footer>
+      <p>Copyright PU, 2020</p>
+      {% include nav.html navclass='nav-bottom' %}
+    </footer>
   </body>
 </html>

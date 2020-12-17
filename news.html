@@ -1,5 +1,14 @@
 ---
-layout: default
+layout: news-layout
 ---
 
-<h1>news</h1>
+<h1>Planetary News</h1>
+
+<ul>
+  {% for news in site.categories.news limit:1 %}
+  <li>
+    <a href="">{{news.title}}</a>
+    <p>{{news.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>
